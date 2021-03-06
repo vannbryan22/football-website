@@ -1,7 +1,7 @@
 const requestOptions={
     getTeams:{
         method: 'GET',
-        url: 'http://api.football-data.org/v2/competitions/2021/teams',
+        url: 'https://api.football-data.org/v2/competitions/2021/teams',
         headers: {
           'X-Auth-Token': '2d07f226585b47d693678d4198b0c927',
         }
@@ -9,7 +9,7 @@ const requestOptions={
     getTeamMatches:(team)=>{
         return{
             method: 'GET',
-            url: `http://api.football-data.org/v2/teams/${team}/matches`,
+            url: `https://api.football-data.org/v2/teams/${team}/matches`,
             headers: {
             'X-Auth-Token': '2d07f226585b47d693678d4198b0c927',
             }
@@ -18,7 +18,7 @@ const requestOptions={
     getTeamStats:(team)=>{
         return{
             method: 'GET',
-            url: `http://api.football-data.org/v2/teams/${team}`,
+            url: `https://api.football-data.org/v2/teams/${team}`,
             headers: {
             'X-Auth-Token': '2d07f226585b47d693678d4198b0c927',
             }
@@ -26,7 +26,7 @@ const requestOptions={
     },
     getCompetitions:{
         method: 'GET',
-        url: 'http://api.football-data.org/v2/competitions/2021',
+        url: 'http:s//api.football-data.org/v2/competitions/2021',
         headers: {
           'X-Auth-Token': '2d07f226585b47d693678d4198b0c927',
         }
