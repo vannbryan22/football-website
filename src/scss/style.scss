@@ -1,0 +1,21 @@
+@import 'config';
+@import 'home';
+@import 'headerScoreBoard';
+@import 'header';
+@import 'teams';
+@import 'fixtures';
+@import 'stats';
+@import 'news';
+
+
+*{
+    margin: 0;
+}
+
+.cs{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}

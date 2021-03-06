@@ -1,0 +1,97 @@
+.fixtures{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: $textDark;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    &__close{
+        position: fixed;
+        top: 10px;
+        font-size: x-large;
+        left: 10px;
+        color: $textLight;
+        transition: all 300ms ease-in-out;
+
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    }
+
+    &__loading{
+        h1{
+            color: white;
+        }
+    }
+
+    &__container{
+        width: 80%;
+        background-color: $textLight;
+        min-height: 90vh;
+
+    }
+
+    &__titles{
+        display: flex;
+        justify-content: space-around;
+        margin: .5rem 0;
+        border-bottom: 1px solid $gray;
+        box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+
+        &Match{
+            text-align: center;
+            width: 30%;
+        }
+    }
+
+    &__teamFixture{
+        display: flex;
+        justify-content: space-around;
+        font-size: small;
+        border-bottom: 1px solid $gray;
+        margin-bottom: .2rem;
+
+        .fixtures__date{
+            display: flex;
+        }
+
+        .fixtures__match{
+            display: flex;
+            width: 30%;
+            justify-content: space-between;
+            align-items: center;
+
+
+            p{
+                margin: 0 .5rem;
+                font-size: x-small;
+            }
+        }
+    }
+    
+}
+
+// .fixtures__animation-enter {
+//     width: 10%;
+//     height: 40px;
+// }
+// .fixtures__animation-enter-active {
+//     position: absolute;
+//     width: 100%;
+//     height: auto;
+//     transition: all 300ms ease-in-out;
+// }
+// .fixtures__animation-exit {
+//     width: 10%;
+// }
+// .fixtures__animation-exit-active {
+//     position: absolute;
+//     width: 100%;
+//     transition: all 300ms ease-in-out;
+// }

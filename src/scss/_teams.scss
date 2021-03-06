@@ -1,0 +1,63 @@
+.teams{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__title{
+        display: flex;
+        padding-left: 1rem;
+    }
+
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+
+        .teams__loading{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+
+            h1{
+                color: $textDark;
+            }
+        }
+
+        .teams__team{
+            display: flex;
+            width: 50%;
+            margin-top: 1rem;
+
+            &Logo{
+                margin-left: 1rem;
+
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            &Nav{
+                margin-left: .5rem;
+                &Name{
+                    font-size: medium;
+                    cursor: default;
+                }
+
+                &Select{
+                    display: flex;
+
+                    p{
+                        font-size: x-small;
+                        margin-right: 4px;
+                        color: $textLink;
+                        cursor: pointer;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

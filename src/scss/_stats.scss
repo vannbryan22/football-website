@@ -1,0 +1,93 @@
+.stats{
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: $textDark;
+    justify-content: center;
+    align-items: center;
+
+    &__close{
+        position: fixed;
+        top: 10px;
+        font-size: x-large;
+        left: 10px;
+        color: $textLight;
+        transition: all 300ms ease-in-out;
+
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    }
+
+    &__titles{
+        display: flex;
+        margin: .5rem 0;
+        justify-content: center;
+        border-bottom: 1px solid $gray;
+        box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+
+        &Name{
+            color: lighten(#0000ff, 20%);
+            width: 300px;
+        }
+
+        &Born{
+            color: lighten(#0000ff, 20%);
+            width: 200px;
+        }
+
+        &Position{
+            color: lighten(#0000ff, 20%);
+            width: 200px;
+        }
+
+        
+    }
+
+    &__group{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        background-color: $textLight;
+        min-height: 100vh;
+    }
+
+    &__loading{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+        h1{
+            color: $textDark;
+        }
+    }
+
+    &__squad{
+        display: flex;
+        justify-content: center;
+        margin-bottom: .3rem;
+        border-bottom: 1px solid $gray;
+        font-size: smaller;
+
+        &Name{
+            display: flex;
+            justify-content: flex-start;
+            width: 300px;
+        }
+
+        &Nationality{
+            display: flex;
+            justify-content: flex-start;
+            width: 200px;
+        }
+
+        &Position{
+            display: flex;
+            justify-content: flex-start;
+            width: 200px;
+        }
+    }
+}
